@@ -147,6 +147,9 @@
             android:layout_marginTop="5dp"
             android:gravity="center_horizontal"
             android:text="SCOREBOARD"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
@@ -174,7 +177,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/human"
-                android:textColor="#0b01dd"
+                android:textStyle="bold"
+                android:textColor="#92de8d"
                 android:textSize="24sp" />
 
             <TextView
@@ -190,9 +194,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ties"
-                android:textColor="@android:color/white"
-                android:textSize="24sp" />
 
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
             <TextView
                 android:id="@+id/tiesCount"
                 android:layout_width="wrap_content"
@@ -206,6 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/android"
+                android:textStyle="bold"
                 android:textColor="#ff0000"
                 android:textSize="24sp" />
 
@@ -231,9 +236,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="12dp"
-        android:background="#ffffff"
+        android:background="@drawable/background_button"
         android:gravity="center"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:text="New Game"
         android:textAllCaps="true"
         android:textSize="20sp"
@@ -248,10 +253,10 @@
         android:id="@+id/tree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@drawable/background_button"
         android:gravity="center"
         android:padding="8dp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:text="4 X 4 Board Size"
         android:textAllCaps="true"
         android:textSize="20sp"
@@ -261,10 +266,10 @@
         android:id="@+id/fiveOpen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@drawable/background_button"
         android:gravity="center"
         android:padding="8dp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:text="5 x 5 Board Size"
         android:textAllCaps="true"
         android:textSize="20sp"

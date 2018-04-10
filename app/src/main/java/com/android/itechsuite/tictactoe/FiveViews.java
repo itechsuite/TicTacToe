@@ -10,13 +10,14 @@ import android.widget.TextView;
 
 public class FiveViews extends AppCompatActivity {
     // Represents the internal state of the game
+    //This class is already called and its referenced from this class
     private TicTacToeFiveBoard mGame;
 
-    // Buttons making up the board
+    // Creating the buttons needed for the layout
     private Button mBoardButtons[];
     private Button mNewGame;
 
-    // Various text displayed
+    // Creating various textviews for the layout
     private TextView mInfoTextView;
     private TextView mPlayerOneCount;
     private TextView mTieCount;
@@ -24,13 +25,14 @@ public class FiveViews extends AppCompatActivity {
     private TextView mPlayerOneText;
     private TextView mPlayerTwoText;
 
-    // Counters for the wins and ties
+    // COunters for the wins and ties in the game
     private int mPlayerOneCounter = 0;
     private int mTieCounter = 0;
     private int mPlayerTwoCounter = 0;
 
-    // Bools needed to see if player one goes first
-    // if the gameType is to be single or local multiplayer
+    // Check which user goes first
+
+    // if the game is to be single or local multiplayer
     // if it is player one's turn
     // and if the game is over
     private boolean mPlayerOneFirst = true;
@@ -39,7 +41,7 @@ public class FiveViews extends AppCompatActivity {
     private boolean mGameOver = false;
 
     /**
-     * Called when the activity is first created.
+     *  This method is called when the activity is first created.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -82,7 +84,7 @@ public class FiveViews extends AppCompatActivity {
         addListenerOnButton();
 
 
-        // setup the textviews
+        // Initialiazing  the textviews
         mInfoTextView = (TextView) findViewById(R.id.information);
         mPlayerOneCount = (TextView) findViewById(R.id.humanCount);
         mTieCount = (TextView) findViewById(R.id.tiesCount);
@@ -90,15 +92,15 @@ public class FiveViews extends AppCompatActivity {
         mPlayerOneText = (TextView) findViewById(R.id.human);
         mPlayerTwoText = (TextView) findViewById(R.id.android);
 
-        // set the initial counter display values
+        // set the values for the initial counter display values
         mPlayerOneCount.setText(Integer.toString(mPlayerOneCounter));
         mTieCount.setText(Integer.toString(mTieCounter));
         mPlayerTwoCount.setText(Integer.toString(mPlayerTwoCounter));
 
-        // create a new game object
+        // Creating a new game object reference
         mGame = new TicTacToeFiveBoard();
 
-        // start a new game
+        // Begins a new game
         startNewGame(mGameType);
     }
 

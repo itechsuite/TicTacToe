@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center_horizontal">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/mmmm" />
+        android:src="@drawable/splash" />
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,11 +22,14 @@
 
         <Button
             android:id="@+id/one_player"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
+
             android:background="#ffffff"
-            android:padding="4dp"
+            android:padding="10dp"
+            android:fontFamily="cursive"
             android:text="Single Player"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
@@ -37,9 +41,11 @@
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:layout_margin="6dp"
+            android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:padding="4dp"
+            android:padding="10dp"
             android:text="Multi Player"
+            android:fontFamily="cursive"
             android:textAllCaps="false"
             android:textSize="30sp" />
 
@@ -48,12 +54,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"
-            android:padding="4dp"
+            android:padding="10dp"
             android:textColor="@android:color/black"
             android:layout_margin="6dp"
             android:text="Exit Game"
+            android:fontFamily="cursive"
+            android:layout_weight="1"
             android:textAllCaps="false"
             android:textSize="30sp" />
 
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
