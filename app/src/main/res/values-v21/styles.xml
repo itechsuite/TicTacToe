@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TicStatus" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/StatusBar</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+    </style>
+</resources>
